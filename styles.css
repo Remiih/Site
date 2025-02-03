@@ -2,17 +2,32 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f2f2f2; /* Light background */
+  color: #333; /* Dark text */
 }
 
 header {
-  background-color: #f0f0f0;
+  background-color: #ccccff; /* Purple header */
   padding: 1em;
+  text-align: center; /* Center the header text */
+}
+
+h1 {
+  color: #333; /* Dark header text */
+  margin: 0; /* Remove default margin */
 }
 
 nav a {
-  margin-right: 1em;
+  margin: 0 0.5em; /* Adjust spacing */
   text-decoration: none;
   color: #333;
+  padding: 0.5em 1em; /* Add padding for better click target */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+  background-color: rgba(51, 51, 51, 0.1); /* Subtle hover effect */
 }
 
 section {
@@ -21,6 +36,37 @@ section {
 
 #home p {
   font-size: 20px;
+}
+
+#contact {
+  background-color: #f9f9f9; /* Slightly lighter background for contact section */
+  padding: 3em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact form button {
+  background-color: #ccccff; /* Purple button */
+  color: #fff;
+  padding: 0.8em 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #ccccff; /* Purple footer */
+  padding: 1em;
+  text-align: center;
 }
 
 /* Add more styles as needed */
