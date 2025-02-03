@@ -4,6 +4,9 @@ body {
   padding: 0;
   background-color: #f2f2f2; /* Light background */
   color: #333; /* Dark text */
+  display: flex; /* Enable flexbox for the body */
+  min-height: 100vh; /* Ensure the body takes up the full viewport height */
+  flex-direction: column; /* Stack header, main, and footer vertically */
 }
 
 header {
@@ -28,6 +31,10 @@ nav a {
 
 nav a:hover {
   background-color: rgba(51, 51, 51, 0.1); /* Subtle hover effect */
+}
+
+main {
+  flex: 1; /* Allow main content to grow and push the footer down */
 }
 
 section {
