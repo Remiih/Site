@@ -85,4 +85,15 @@ footer {
   text-align: center;
 }
 
+/* Radio button styling */
+#contact input[type="radio"] {
+  margin-right: 0.5em; /* Space between radio and label */
+  vertical-align: middle; /* Vertically align radio with label */
+}
+
+#contact label {
+  display: inline-block; /* Makes labels consistent width */
+  margin-bottom: 0.5em; /* Adds space between radio groups */
+}
+
 /* Add more styles as needed */
