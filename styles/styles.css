@@ -49,6 +49,11 @@ section {
   font-size: 20px;
 }
 
+ul,
+ol {
+  font-size: 20px;
+}
+
 #contact {
   background-color: #f9f9f9; /* Slightly lighter background for contact section */
   padding: 3em;
