@@ -94,6 +94,13 @@ footer {
 #contact input[type="radio"] {
   margin-right: 0.5em; /* Space between radio and label */
   vertical-align: middle; /* Vertically align radio with label */
+  border: 2px solid #ccccff; /* Add a purple border */
+  border-radius: 50%; /* Make it a circle */
+  transition: border-color 0.3s ease; /* Add transition for hover effect */
+}
+
+#contact input[type="radio"]:hover {
+  border-color: #a3a3e6; /* Lighter purple on hover */
 }
 
 #contact label {
