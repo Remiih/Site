@@ -1,97 +1,64 @@
-/* Variables */
-:root {
-  --primary-color: #ccccff;
-  --light-gray: #f9f9f9;
-  --dark-gray: #333;
-  --border-color: #ccc;
-  --base-font-size: 16px;
-  --padding-base: 1em;
-  --padding-large: 2em;
-  --border-radius: 5px;
-  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* General Styles */
 body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background-color: var(--light-gray);
-  color: var(--dark-gray);
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+  background-color: #f2f2f2; /* Light background */
+  color: #333; /* Dark text */
+  display: flex; /* Enable flexbox for the body */
+  min-height: 100vh; /* Ensure the body takes up the full viewport height */
+  flex-direction: column; /* Stack header, main, and footer vertically */
 }
 
-/* Header Styles */
 header {
-  background-color: var(--primary-color);
-  padding: var(--padding-base);
-  text-align: center;
+  background-color: #ccccff; /* Purple header */
+  padding: 1em;
+  text-align: center; /* Center the header text */
 }
 
-header h1 {
-  color: var(--dark-gray);
-  margin: 0;
+h1 {
+  color: #333; /* Dark header text */
+  margin: 0; /* Remove default margin */
 }
 
-header nav {
-  display: flex;
-  justify-content: center; /* Center navigation links */
-}
-
-header nav a {
-  margin: 0 var(--padding-base);
+nav a {
+  margin: 0 0.5em; /* Adjust spacing */
   text-decoration: none;
-  color: var(--dark-gray);
-  padding: var(--padding-base);
-  border-radius: var(--border-radius);
-  transition: background-color 0.3s ease;
+  color: #333;
+  padding: 0.5em 1em; /* Add padding for better click target */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
-header nav a:hover {
-  background-color: rgba(51, 51, 51, 0.1);
+nav a:hover {
+  background-color: rgba(51, 51, 51, 0.1); /* Subtle hover effect */
 }
 
-/* Main Styles */
 main {
-  flex: 1;
+  flex: 1; /* Allow main content to grow and push the footer down */
 }
 
-main section {
-  padding: var(--padding-large);
+section {
+  padding: 2em;
 }
 
-/* Home Section Styles */
 #home p {
-  font-size: 1.25rem; /* Use rem units */
+  font-size: 20px;
 }
 
-/* About Section Styles */
 #about p {
-  font-size: 1.25rem;
+  font-size: 20px;
 }
 
-#about ul,
-#about ol {
-  font-size: 1.25rem;
-  list-style-position: inside; /* Move list markers inside */
+ul,
+ol {
+  font-size: 20px;
 }
 
-/* Contact Section Styles */
 #contact {
-  background-color: var(--light-gray);
-  padding: var(--padding-large);
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
-  margin: var(--padding-large);
-}
-
-/* Form Styles - using more general selectors */
-#contact form input,
-#contact form textarea,
-#contact form button {
-  border-radius: var(--border-radius);
+  background-color: #f9f9f9; /* Slightly lighter background for contact section */
+  padding: 3em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
 #contact form input,
@@ -99,43 +66,23 @@ main section {
   width: 100%;
   padding: 0.8em;
   margin-bottom: 1em;
-  border: 1px solid var(--border-color);
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 #contact form button {
-  background-color: var(--primary-color);
+  background-color: #ccccff; /* Purple button */
   color: #fff;
   padding: 0.8em 1.5em;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-/* Radio Button Styles */
-.radio-button {
-  margin-right: 0.5em;
-  vertical-align: middle;
-  border: 2px solid var(--primary-color);
-  border-radius: 50%;
-  transition: border-color 0.3s ease;
-}
-
-.radio-button:hover {
-  border-color: #a3a3e6;
-}
-
-.radio-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.radio-group label {
-  display: flex;
-  align-items: center;
-}
-
-/* Footer Styles */
 footer {
-  background-color: var(--primary-color);
-  padding: var(--padding-base);
+  background-color: #ccccff; /* Purple footer */
+  padding: 1em;
   text-align: center;
 }
+
+/* Add more styles as needed */
