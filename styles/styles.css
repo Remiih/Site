@@ -119,6 +119,10 @@ footer {
     display: block; /* Stack radio buttons vertically */
     margin-bottom: 0.5em;
   }
+  #home p, #about p, ul, ol {
+    font-size: 18px; /* Increased font size for smaller screens */
+    line-height: 1.6; /* Improved readability */
+  }
 }
 
 /* Add more styles as needed */
