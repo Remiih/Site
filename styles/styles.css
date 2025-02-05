@@ -92,28 +92,26 @@ main section {
   flex-direction: column; /* Stack form elements vertically */
 }
 
-.contact-section__input,
-.contact-section__textarea {
+
+/* Reverted input styles */
+.contact-section__form input,
+.contact-section__form textarea {
   width: 100%;
   padding: 0.8em;
   margin-bottom: 1em;
-  border: 1px solid var(--border-color);
-  border-radius: var(--border-radius);
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-.contact-section__button { /* BEM class */
-  background-color: var(--primary-color);
-  color: white;
+.contact-section__form button {
+  background-color: var(--primary-color); /* Purple button */
+  color: #fff;
   padding: 0.8em 1.5em;
   border: none;
-  border-radius: var(--border-radius);
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.contact-section__button:hover {
-  background-color: #a3a3e6;
-}
 
 /* Radio Button Styles */
 .contact-section__radio { /* BEM class */
