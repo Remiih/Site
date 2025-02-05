@@ -33,14 +33,16 @@
           <input type="email" id="email" placeholder="Your Email" required /><br />
           <fieldset aria-label="Site Rating">
             <legend>Site rating:</legend>
-            <input type="radio" id="excellent" name="rating" value="Excellent" />
-            <label for="excellent">Excellent</label><br />
-            <input type="radio" id="good" name="rating" value="Good" />
-            <label for="good">Good</label><br />
-            <input type="radio" id="average" name="rating" value="Average" />
-            <label for="average">Average</label><br />
-            <input type="radio" id="poor" name="rating" value="Poor" />
-            <label for="poor">Poor</label><br />
+            <div class="radio-group">
+              <input type="radio" id="excellent" name="rating" value="Excellent" class="radio-button" />
+              <label for="excellent">Excellent</label><br />
+              <input type="radio" id="good" name="rating" value="Good" class="radio-button" />
+              <label for="good">Good</label><br />
+              <input type="radio" id="average" name="rating" value="Average" class="radio-button" />
+              <label for="average">Average</label><br />
+              <input type="radio" id="poor" name="rating" value="Poor" class="radio-button" />
+              <label for="poor">Poor</label><br />
+            </div>
           </fieldset>
           <button type="submit">Send</button>
         </form>
