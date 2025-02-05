@@ -79,42 +79,40 @@ main section {
 }
 
 /* Contact Section Styles */
-.contact-section { /* BEM class */
+#contact {
   background-color: var(--light-gray);
   padding: var(--padding-large);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
-  margin: var(--padding-large); /* Add margin for spacing */
+  margin: var(--padding-large);
 }
 
-.contact-section__form { /* BEM class */
-  display: flex;
-  flex-direction: column; /* Stack form elements vertically */
+/* Form Styles - using more general selectors */
+#contact form input,
+#contact form textarea,
+#contact form button {
+  border-radius: var(--border-radius);
 }
 
-
-/* Reverted input styles */
-.contact-section__form input,
-.contact-section__form textarea {
+#contact form input,
+#contact form textarea {
   width: 100%;
   padding: 0.8em;
   margin-bottom: 1em;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 1px solid var(--border-color);
 }
 
-.contact-section__form button {
-  background-color: var(--primary-color); /* Purple button */
+#contact form button {
+  background-color: var(--primary-color);
   color: #fff;
   padding: 0.8em 1.5em;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
 }
 
 
 /* Radio Button Styles */
-.contact-section__radio { /* BEM class */
+.contact-section__radio {
   margin-right: 0.5em;
   vertical-align: middle;
   border: 2px solid var(--primary-color);
@@ -126,7 +124,7 @@ main section {
   border-color: #a3a3e6;
 }
 
-.contact-section__label { /* BEM class */
+.contact-section__label {
   display: inline-block;
   margin-bottom: 0.5em;
 }
