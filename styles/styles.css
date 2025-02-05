@@ -20,6 +20,11 @@ h1 {
   margin: 0; /* Remove default margin */
 }
 
+nav {
+  display: flex; /* Use flexbox for navigation */
+  justify-content: center; /* Center navigation items */
+}
+
 nav a {
   margin: 0 0.5em; /* Adjust spacing */
   text-decoration: none;
@@ -38,46 +43,48 @@ main {
 }
 
 section {
-  padding: 2em;
+  padding: 1em; /* Reduced padding for smaller screens */
 }
 
-#home p {
-  font-size: 20px;
+#home p, #about p {
+  font-size: 16px; /* Smaller font size for smaller screens */
+  line-height: 1.5; /* Improved readability */
 }
 
-#about p {
-  font-size: 20px;
-}
-
-ul,
-ol {
-  font-size: 20px;
+ul, ol {
+  font-size: 16px; /* Smaller font size for smaller screens */
+  line-height: 1.5; /* Improved readability */
 }
 
 #contact {
   background-color: #f9f9f9; /* Slightly lighter background for contact section */
-  padding: 3em;
+  padding: 2em; /* Reduced padding for smaller screens */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
 #contact form input,
-#contact form textarea {
+#contact form textarea,
+#contact form fieldset {
   width: 100%;
-  padding: 0.8em;
-  margin-bottom: 1em;
+  padding: 0.6em; /* Reduced padding for smaller screens */
+  margin-bottom: 0.8em; /* Reduced margin for smaller screens */
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-sizing: border-box; /* Include padding and border in element width */
 }
 
 #contact form button {
   background-color: #ccccff; /* Purple button */
   color: #fff;
-  padding: 0.8em 1.5em;
+  padding: 0.6em 1.2em; /* Reduced padding for smaller screens */
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease; /* Add transition for hover effect */
+  display: block; /* Make button take full width */
+  width: 100%; /* Make button take full width */
+  box-sizing: border-box; /* Include padding and border in element width */
 }
 
 #contact form button:hover {
@@ -88,6 +95,30 @@ footer {
   background-color: #ccccff; /* Purple footer */
   padding: 1em;
   text-align: center;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack navigation items vertically */
+    text-align: center; /* Center navigation items */
+  }
+  nav a {
+    display: block; /* Make navigation links take full width */
+    margin: 0.5em 0; /* Adjust margin for vertical stacking */
+    width: 100%; /* Make navigation links take full width */
+    box-sizing: border-box;
+  }
+  #contact form fieldset {
+    display: block; /* Stack radio buttons vertically */
+  }
+  #contact form fieldset legend {
+    margin-bottom: 0.5em;
+  }
+  #contact form fieldset input[type="radio"] + label {
+    display: block; /* Stack radio buttons vertically */
+    margin-bottom: 0.5em;
+  }
 }
 
 /* Add more styles as needed */
