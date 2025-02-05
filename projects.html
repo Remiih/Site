@@ -7,7 +7,7 @@
   <body>
     <header>
       <h1>My Portfolio</h1>
-      <nav>
+      <nav aria-label="Main Navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About Me</a>
         <a href="projects.html">Projects</a>
@@ -16,11 +16,10 @@
     </header>
 
     <main>
-      <section id="projects">
-        <h2>Projects</h2>
-        <!-- Add your project divs here -->
-        <div class="project">
-          <h3>Project 1</h3>
+      <section id="projects" role="region" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects</h2>
+        <div class="project" role="article" aria-labelledby="project1-title">
+          <h3 id="project1-title">Project 1</h3>
           <p>Blah blah blah</p>
           <a href="#">Link to Project 1</a>
         </div>
