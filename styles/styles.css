@@ -77,6 +77,11 @@ ol {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+#contact form button:hover {
+  background-color: #b3b3ff; /* Lighter purple on hover */
 }
 
 footer {
