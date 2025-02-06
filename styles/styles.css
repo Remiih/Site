@@ -126,3 +126,18 @@ footer {
 }
 
 /* Add more styles as needed */
+.project-button {
+  background-color: #ccccff; /* Purple button */
+  color: #fff;
+  padding: 0.6em 1.2em; /* Reduced padding for smaller screens */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add transition for hover effect */
+  text-decoration: none; /* Remove default underline */
+  display: inline-block; /* Make button behave like an inline element */
+}
+
+.project-button:hover {
+  background-color: #b3b3ff; /* Lighter purple on hover */
+}
