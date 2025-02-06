@@ -15,6 +15,52 @@
       href="images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="styles/styles.css" />
+    <style>
+      /* Styles for the skills section */
+      .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center the skill boxes */
+        margin-top: 20px;
+      }
+
+      .skill-box {
+        width: 150px;
+        height: 100px;
+        margin: 10px;
+        background-color: #ccccff; /* Same color as header */
+        border: 1px solid #003d75; /* Dark border */
+        color: #003d75;
+        text-align: center;
+        line-height: 100px; /* Vertically center text */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transitions */
+        position: relative; /* Needed for the pop-up effect */
+      }
+
+      .skill-box:hover {
+        transform: translateY(-5px); /* Move up slightly on hover */
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+      }
+
+      .skill-box::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #ccccff; /* Same color as skill box */
+        opacity: 0;
+        transition: opacity 0.3s ease; /* Add transition for pop-up */
+      }
+
+      .skill-box:hover::before {
+        opacity: 1; /* Show the pop-up on hover */
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -57,6 +103,15 @@
           <li>Finish a degree</li>
           <li>Live comfortably</li>
         </ol>
+
+        <h2>Skills</h2>
+        <div class="skills-container">
+          <div class="skill-box">C#</div>
+          <div class="skill-box">JavaScript</div>
+          <div class="skill-box">HTML</div>
+          <div class="skill-box">CSS</div>
+          <!-- Add more skill boxes as needed -->
+        </div>
       </section>
     </main>
 
