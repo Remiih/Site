@@ -150,3 +150,7 @@ footer {
 .project-button:hover {
   background-color: #b3b3ff; /* Lighter purple on hover */
 }
+
+#about-list {
+  background-color: #f9f9f9;
+}
