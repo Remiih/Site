@@ -37,4 +37,4 @@ Contributions are welcome! Please feel free to open an issue or submit a pull re
 
 ## License
 
-[Specify your license here, e.g., MIT License](https://opensource.org/licenses/MIT)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
